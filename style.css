@@ -33,3 +33,16 @@
     box-shadow: 0px 1px 50px 0px rgba(181, 181, 181, 0.25);
     background: var(--White, rgba(255, 255, 255, 1));
 }
+.banner{
+    background: linear-gradient(90.00deg, rgba(1.251827359199524, 49.64006805419922, 34.606834411621094, 1),rgba(0, 103, 71, 1) 50%,rgba(1, 50, 35, 1) 100%);
+}
+.banner-h1{
+    color: rgba(255, 255, 255, 1);
+    font-family: Hind Madurai;
+    font-weight: 700;
+}
+.banner-p{
+    color: rgba(255, 255, 255, 1);
+    font-family: Hind Madurai;
+    font-weight: 600;
+}
