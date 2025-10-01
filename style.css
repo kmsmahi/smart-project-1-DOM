@@ -1,0 +1,35 @@
+.EmergencyService {
+  color: rgba(0, 103, 71, 1);
+}
+.heart_num {
+  color: rgba(0, 0, 0, 1);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 900;
+}
+.heart {
+  background: rgba(65, 255, 107, 0.1);
+}
+.coin_num {
+  color: rgba(0, 0, 0, 1);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 900;
+}
+.coin {
+  background: rgba(65, 255, 107, 0.1);
+}
+.copy_num,
+.copy-txt{
+  color: rgba(255, 255, 255, 1);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+}
+.copy{
+    background: rgba(0, 166, 62, 1);
+}
+.nav{
+    box-shadow: 0px 1px 50px 0px rgba(181, 181, 181, 0.25);
+    background: var(--White, rgba(255, 255, 255, 1));
+}
