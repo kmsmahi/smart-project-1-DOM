@@ -64,14 +64,14 @@
 .national-emergency{
   color: var(--Gray, rgba(92, 92, 92, 1));
   font-family: Roboto;
-  font-size: 18px;
+  /* font-size: 18px; */
   font-weight: 400;
 }
 .number{
   color: var(--Dark, rgba(17, 17, 17, 1));
   font-family: Roboto;
-  font-size: 32px;
-  font-weight: 700;
+  /* font-size: 32px;
+  font-weight: 700; */
 }
 .all-div{
   border-radius: 9999px;
