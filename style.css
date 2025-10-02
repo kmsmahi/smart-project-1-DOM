@@ -46,3 +46,74 @@
     font-family: Hind Madurai;
     font-weight: 600;
 }
+.cart-1{
+  border-radius: 12px;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+  background: var(--White, rgba(255, 255, 255, 1));
+}
+.emergency-img{
+  border-radius: 16px;
+  background: rgba(255, 227, 226, 1);
+}
+.national-emergency-number{
+  color: var(--Dark, rgba(17, 17, 17, 1));
+  font-family: Li Ador Noirrit;
+  /* font-size: 24px;
+  font-weight: 700; */
+}
+.national-emergency{
+  color: var(--Gray, rgba(92, 92, 92, 1));
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+}
+.number{
+  color: var(--Dark, rgba(17, 17, 17, 1));
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 700;
+}
+.all-div{
+  border-radius: 9999px;
+  background: var(--Gray-Light, rgba(242, 242, 242, 1));
+}
+.copy-btn{
+  box-sizing: border-box;
+  border: 1px solid var(--Stroke, rgba(212, 214, 213, 1));
+  border-radius: 8px;
+  background: var(--White, rgba(255, 255, 255, 1));
+}
+.call-btn{
+  border-radius: 8px;
+  background: rgba(0, 166, 62, 1);
+}
+.cp_p{
+  color: var(--Gray, rgba(92, 92, 92, 1));
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+}
+body{
+  background: rgba(245, 255, 246, 1);
+}
+.main-sec-2{
+  border-radius: 12px;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+  background: var(--White, rgba(255, 255, 255, 1));
+}
+.call-history-h3{
+  color: var(--Dark, rgba(17, 17, 17, 1));
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+}
+.clr-btn{
+  border-radius: 50px;
+  background: rgba(0, 166, 62, 1);
+}
+.clear{
+  color: rgba(255, 255, 255, 1);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+}
