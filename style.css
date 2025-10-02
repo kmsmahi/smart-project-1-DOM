@@ -96,7 +96,7 @@
 body{
   background: rgba(245, 255, 246, 1);
 }
-.main-sec-2{
+.call-history-section{
   border-radius: 12px;
   box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
   background: var(--White, rgba(255, 255, 255, 1));
@@ -104,11 +104,10 @@ body{
 .call-history-h3{
   color: var(--Dark, rgba(17, 17, 17, 1));
   font-family: Roboto;
-  font-size: 20px;
-  font-weight: 500;
+  /* font-size: 20px;
+  font-weight: 500; */
 }
 .clr-btn{
-  border-radius: 50px;
   background: rgba(0, 166, 62, 1);
 }
 .clear{
