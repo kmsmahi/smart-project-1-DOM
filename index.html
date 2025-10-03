@@ -16,11 +16,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
   </head>
-  <body class="mx-auto">
-    <header>
+  <body class="container mx-auto">
+    <header class="sticky top-0 bg-white z-50 lg:static">
       <!-- nav part -->
       <nav
-        class="nav w-full lg:h-[100px] flex flex-wrap justify-between items-center px-8 py-6 lg:px-13 sticky top-0 z-50 bg-white shadow-md"
+        class="nav w-full lg:h-[100px] flex flex-wrap justify-between items-center px-8 py-6 lg:px-13 "
       >
         <!-- nav left part -->
         <div class="nav-div-1 flex items-center gap-3">
@@ -42,7 +42,7 @@
         </div>
 
         <!-- nav right part -->
-        <div class="nav-div-2 flex items-center gap-4 mt-3 lg:mt-0">
+        <div class="nav-div-2 flex items-center gap-8 lg:gap-4 mt-3 lg:mt-0">
           <!-- nav right part-1 -->
           <div
             class="heart lg:w-[123px] lg:h-[52px] flex justify-center items-center gap-1 px-3 py-2 lg:rounded-[50px] rounded-[20px]"
@@ -77,7 +77,7 @@
 
       <!-- banner part -->
       <section
-        class="banner w-full flex flex-col justify-center items-center text-center gap-3 px-4 py-6 lg:py-10 lg:px-20"
+        class="banner container mx-auto  w-full flex flex-col justify-center items-center text-center gap-3 px-4 py-6 lg:py-10 lg:px-20"
       >
         <img
           class="lg:w-[92px] lg:h-[92px] w-[70px] h-[70px]"
@@ -96,14 +96,18 @@
           Government of the People’s Republic of Bangladesh
         </p>
       </section>
+
     </header>
+
+    
+
     <main>
       <!-- main-section -->
       <section
         class="main-sec-container w-11/12 mx-auto py-10 grid grid-cols-1 lg:grid-cols-12 gap-8"
       >
         <!-- carts-section -->
-        <section class="all-carts col-span-9">
+        <section class="all-carts col-span-9 px-8 lg:px-0">
           <!-- cart-grid-1 -->
           <div class="card-box-1 grid lg:grid-cols-3 gap-5">
             <!-- cart-1 -->
@@ -462,7 +466,7 @@
           </div>
         </section>
         <!-- call-history-section -->
-        <aside class="call-history-section w-[275px]  lg:col-span-3">
+        <aside class="call-history-section w-[275px]  lg:col-span-3 mx-8">
           <div
           class="call-history-nav flex justify-between items-center p-2 lg:p-4"
         >
