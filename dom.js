@@ -6,6 +6,49 @@ for (let btn of allBtn) {
     document.getElementById("heart-num").innerText++;
   });
 }
+
+// update the copy button(traverse apply korar chesta).....
+const allCopyBtn = document.getElementsByClassName("copy-btn");
+for (let copyBtn of allCopyBtn) {
+  copyBtn.addEventListener("click", function () {
+    const copyNumber = copyBtn.parentNode.parentNode.children[3].innerText;
+    // text copy and paste anywhere.....
+    //  in according to the given prompt....
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard
+        .writeText(copyNumber)
+        .then(() => {
+          alert(`✅ Number is copied : ${copyNumber}`);
+          document.getElementById("copy-num").innerText++;
+        })
+        .catch((err) => {
+          console.error("Clipboard error:", err);
+          alert("❌ Copy failed!");
+        });
+    } else {
+      const textarea = document.createElement("textarea");
+      textarea.value = copyNumber;
+      document.body.appendChild(textarea);
+      textarea.select();
+      try {
+        document.execCommand("copy");
+        alert(`✅ Number is copied : ${copyNumber}`);
+        document.getElementById("copy-num").innerText++;
+      } catch (err) {
+        alert("❌ Copy failed!");
+      }
+      document.body.removeChild(textarea);
+    }
+  });
+}
+
+// clear a click korle all history remove......
+document.getElementById("clear-btn").addEventListener("click", function (e) {
+  e.preventDefault();
+  const historyCleaner = document.getElementById("add-history");
+  historyCleaner.innerHTML = " ";
+});
+
 // update the call button......
 // for cart-1.......
 document.getElementById("call-btn-1").addEventListener("click", function (e) {
