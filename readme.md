@@ -1,6 +1,7 @@
-### 🟩 **Q.1: What is the difference between `getElementById`, `getElementsByClassName`, and `querySelector` / `querySelectorAll`?  
 
-**Ans:**  
+### 🟩 Q1: What is the difference between `getElementById`, `getElementsByClassName`, and `querySelector` / `querySelectorAll`?
+
+**Answer:**
 - `getElementById(' ')` → Returns a **single element**. Selector type: only **id**.  
 - `getElementsByClassName(' ')` → Returns an **HTMLCollection**. Selector type: only **class**.  
   → Need a loop to access a single element.  
@@ -9,45 +10,63 @@
 
 ---
 
-### 🟨 **Q.2: How do you create and insert a new element into the DOM?**
+### 🟨 Q2: How do you create and insert a new element into the DOM?
 
-**Ans:**
+**Answer:**
 ```js
 const newDiv = document.createElement('div');
 newDiv.textContent = 'Hello World!';
 const mainDiv = document.getElementById('main');
 mainDiv.appendChild(newDiv);
 
+🟦 Q3: What is Event Bubbling and how does it work?
 
-🟦 Q.3: What is Event Bubbling and how does it work?
+Answer:
 
-Ans:
-Event Bubbling is a mechanism in JavaScript where an event that occurs on a child element automatically propagates upward through its parent, grandparent, and all ancestor elements in the DOM hierarchy.
-In other words, the event “bubbles up” from the innermost element that triggered it to the outermost elements.
-For example, if a button inside a <div> is clicked, the click event first occurs on the button, then on the parent <div>, and continues to propagate up to the document level.
+#Event Bubbling is a mechanism where an event triggered on a child element propagates upward through its parent, grandparent, and ancestors.
 
-🟪 Q.4: What is Event Delegation in JavaScript? Why is it useful?
+#The event “bubbles up” from the inner element to the outermost elements in the DOM.
 
-Ans:
-Event Delegation in JavaScript is a technique where instead of adding event listeners to multiple individual child elements, you add a single event listener to their common parent element.
-This parent element listens for events that bubble up from its children, and you can identify which child triggered the event using the event.target property.
+Example:
+<div>
+  <button>Click Me</button>
+</div>
+If the button is clicked, the event occurs on the button first, then bubbles up to the parent <div>, and then to the document.
 
-         Why it’s useful:
+🟪 Q4: What is Event Delegation in JavaScript? Why is it useful?
 
-->Improves performance (fewer event listeners → less memory use).
+Answer:
 
-->Easier to manage and maintain.
+#Event Delegation is a technique where you attach one event listener to a parent element instead of multiple listeners to its children.
 
-->Works for dynamically added elements.
-->In short, event delegation takes advantage of event bubbling to make event handling more efficient and flexible.
+#It listens for events from child elements using event bubbling and identifies the source with event.target.
+
+Advantages:
+
+#Reduces the number of event listeners (better performance).
+
+#Easier to manage and maintain.
+
+#Works for dynamically added elements.
+Example:
+document.getElementById('parent').addEventListener('click', function(e) {
+  if (e.target.matches('.child')) {
+    console.log('Child clicked!');
+  }
+});
 
 
+🟥 Q5: Difference between preventDefault() and stopPropagation()
 
-🟥 Q.5: Difference between preventDefault() and stopPropagation()
+Answer:
 
-Ans:
-
-preventDefault() → Stops the browser’s default behavior (e.g., stopping a form submission or link navigation).
+preventDefault() → Stops the default browser action (e.g., prevents form submission or link navigation).
 
 stopPropagation() → Stops the event from bubbling up to parent elements.
+
+Example:
+document.getElementById('link').addEventListener('click', function(e) {
+  e.preventDefault(); // Stop link from opening
+  e.stopPropagation(); // Stop event from bubbling up
+});
 
